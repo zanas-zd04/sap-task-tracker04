@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition für Tasks'
+define service ZUI_TASK_0004 {
+  expose ZC_TASK_0004 as Task;
+}

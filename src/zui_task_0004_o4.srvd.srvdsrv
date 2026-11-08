@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_TASK_0004'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_TASK_0004'
+  }
+}
+define service ZUI_TASK_0004_O4 provider contracts odata_v4_ui {
+  expose ZC_TASK_0004;
+}

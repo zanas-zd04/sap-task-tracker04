@@ -1,0 +1,82 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'TaskId'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'TaskId'
+annotate view ZC_TASK_0004 with
+{
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @EndUserText.label: 'TaskId'
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'TaskId'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'TaskId'
+  } ]
+ @UI.hidden: true
+  TaskId;
+  
+  @EndUserText.label: 'EmployeeId'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'EmployeeId'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'EmployeeId'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  EmployeeId;
+  
+  @EndUserText.label: 'Project'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Project'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'Project'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  Project;
+  
+  @EndUserText.label: 'Description'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Description'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Description'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  Description;
+  
+  @EndUserText.label: 'Stunden'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Stunden'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Stunden'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  Stunden;
+}

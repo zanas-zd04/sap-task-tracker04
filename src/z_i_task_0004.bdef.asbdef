@@ -1,0 +1,24 @@
+managed implementation in class zbp_i_task_0004 unique;
+strict ( 2 );
+
+define behavior for Z_I_TASK_0004 alias task04
+persistent table ztask_0004
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly, numbering : managed ) TaskId;
+  field ( mandatory ) EmployeeId, Project, stunden;
+
+  mapping for ztask_0004
+  {
+    TaskId = task_id;
+    EmployeeId = emp_id;
+    Project = project;
+    Description = description;
+    stunden = stunden;
+  }
+}
